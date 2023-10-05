@@ -1,0 +1,216 @@
+<HTML>
+<HEAD>
+<TITLE>Все о SQL</TITLE>
+<STYLE>
+P {text-indent:25px;}
+</STYLE>
+<STYLE>
+.leftimg {
+float:left
+}
+</STYLE>
+<STYLE>
+.rightimg p {
+text-align: center;
+}
+.rightimg {
+float:right;
+margin: 4px 10px 2px 0px;
+}
+</STYLE>
+<STYLE>
+.center {
+display: block;
+margin-left:auto;
+margin-right:auto;
+width:50%;
+}
+</STYLE>
+<STYLE>
+.shrift {
+font-family: "Saira Regular";
+src:url("saira-regular.woff")format:("woff");
+font-weight: normal;
+	font-style: normal;
+}
+</STYLE>
+<STYLE>
+.P1 {
+float:left;
+}
+.P2 {
+float:left;
+}
+</STYLE>
+<STYLE>
+.h {
+list-style-image: url(kartinka1.png);
+}
+</STYLE>
+</HEAD>
+<BODY>
+<P ALIGN="CENTER" style="font-size:32px" class="shrift">SQL</P>
+<BR>
+<BR>
+<P ALIGN="LEFT" style="font-size:24px">Содержание</P>
+<OL TYPE="1" START="1">
+<LI><a href="#one">История создания</a></LI>
+<UL>
+<LI><a href="#one1">Что такое SQL?И для чего он?</a></LI>
+<LI><a href="#one2">Создание SQL</a></LI>
+</UL>
+<LI><a href="#two">Красткий обзор</a></LI>
+<UL>
+<LI><a href="#two1">Преимуцества и недостатки</a></LI>	
+<LI><a href="#two2">Что такое база данных в SQL?</a></LI>
+</UL>
+<LI><a href="#three">Команды и пример кода</a></LI>
+<UL>
+<LI><a href="#three1">Основные команды</a></LI>
+<LI><a href="#three2">Пример кода</a></Li>
+</UL>
+<P><a name="one"></a><P>
+<P ALIGN="CENTER" style="font-size:24px"><FONT COLOR="pink" FACE="Comic Sans MS">История создания</FONT></P>
+<P><A NAME="one1"></a><P>
+<P ALIGN="LEFT" style="font-size:20px"><FONT COLOR="pink" FACE="Comic Sans MS">Что такое SQL? и для чего он?</FONT></P>
+<P style="font-size:18px">Язык структурированных запросов (SQL) – это язык программирования для хранени
+я и обработки информации в реляционной базе данных. Реляционная база данных хранит информацию в табличной форме со строками и 
+столбцами, представляющими различные атрибуты данных и различные связи между значениями данн
+ых. Инструкции SQL можно использовать для хранения, обновления, удаления, поиска и извлечения информации из базы данных. 
+Можно также использовать SQL для поддержания и оптимизации производительности базы данных.
+</P>
+<IMG SRC='sql.jpg' WIDHT='200' HEIGHT='280' class="leftimg">
+<P style="font-size:18px">Язык структурированных запросов (SQL) – популярный язык запросов, который часто используется во всех типах
+ приложений. Аналитики данных и разработчики изучают и используют SQL, потому что это решение хорошо интегрируется с различными языками
+ программирования. Например, они могут внедрять SQL-запросы с языком программирования Java для создания высокопроизводительных приложений
+ обработки данных с основными системами баз данных SQL, такими как Oracle или MS SQL Server. Решение SQL также довольно просто в освоении, 
+так как в его утверждениях используются общепринятые английские ключевые слова.</P>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<P><a name="one2"></a></p>
+<P ALIGN="LEFT" style="font-size:20px"><FONT COLOR="pink" FACE="Comic Sans MS">Создание SQL</FONT></P>
+<P style="font-size:18px">Первый международный стандарт языка SQL был принят в 1989 г. Иногда стандарт SQL1 также называют стандартом ANSI/ISO, и подавляющее большинство 
+доступных на рынке СУБД поддерживают этот стандарт полностью. Однако развитие информационных технологий, связанных с базами данных, и необходимость 
+реализации переносимых приложений потребовали в скором времени доработки и расширения первого стандарта SQL.
+В конце 1992 г. был принят новый международный стандарт языка SQL, который называется SQL/92 или SQL2. И он не лишен недостатков, но в то же время 
+является существенно более точным и полным, чем SQL/89. В настоящий момент большинство производителей СУБД внесли изменения в свои продукты так, чтобы
+они в большей степени удовлетворяли стандарту SQL2.
+<P style="font-size:18px">В 1999 году появился новый стандарт, названный SQL3. Если отличия между стандартами SQL1 и SQL2 во многом были количественными, то стандарт SQL3 соответствует
+качественным серьезным преобразованиям. В SQL3 введены новые типы данных, при этом предполагается возможность задания сложных структурированных типов данных, 
+которые в большей степени соответствуют объектной ориентации.
+Наконец, добавлен раздел, который вводит стандарты на события и триггеры, которые ранее не затрагивались в стандартах, хотя давно уже широко использовались в 
+коммерческих СУБД. В стандарте определены возможности четкой спецификации триггеров как совокупности события и действия.
+В конце 2003 года был принят и опубликован новый вариант международного стандарта SQL:2003.В SQL:2003 специфицирован ряд новых и важных свойств, с небольшими 
+модификациями, внесёнными позже в 2008 году.</P>
+<BR>
+<BR>
+<P><a name="two"></a></p>
+<P ALIGN="CENTER" style="font-size:24px"><FONT COLOR="pink" FACE="Comic Sans MS">Краткий обзор SQL</FONT></P>
+<P><a name="two1"></a></p>
+<P ALIGN="LEFT" style="font-size:20px"><FONT COLOR="pink" FACE="Comic Sans MS">Преимущесвта и недостатки SQL</FONT></P>
+<P style="font-size:18px">Преимущества:</P>
+<UL TYPE="DISC" style="font-size:18px">
+<LI>Дает возможность пользователям получать доступ к данным в системах управления реляционными базами данных.</LI>
+<LI>Дает возможность пользователям описывать данные.</LI>
+<LI>Дает возможность пользователям определять данные в базе данных и управлять ими.</LI>
+<LI>Дает возможность встраивания в другие языки с использованием модулей SQL, библиотек и пре-компиляторов.</LI>
+</UL>
+<P style="font-size:18px">Недостатки:</P>
+<UL TYPE="DISC" style="font-size:18px">
+<LI>Отсутствие поддержки свойства «=» и высокая избыточность</LI>
+<LI>SQL считается сложным для освоения, с ним работают в основном программисты</LI>
+<LI>Возможность дублирования</LI>
+<LI>Неопределенные значения</LI>
+</UL>
+<BR>
+<P><a name="two2"></a></p>
+<P ALIGN="LEFT" style="font-size:20px"><FONT COLOR="pink" FACE="Comic Sans MS">Что такое база данных в SQL?</FONT></P>
+<P style="font-size:18px"> База данных — это большие таблицы с данными, примерно как в Excel. С той разницей, что Excel
+ может хранить до нескольких сотен мегабайт, а база данных — сотни гигабайт или терабайты.
+Язык SQL предназначен для работы с реляционными базами данных — множеством таблиц, которые связаны между собой.</P>
+<P style="font-size:18px">Таблица в базе данных SQL состоит из следующих элементов:</P>
+<UL class="h" style="font-size:18px">
+<LI>Ключи — то, что идентифицирует сущность в таблице. Сущность — это информация в базе данных, а ключом может быть, например, порядковый номер строки. 
+Ключи делятся на три типа: первичные, внешние и потенциальные.</LI>
+<LI>Атрибут — столбец с одним параметром. Например, «Название», «Дата» или «Стоимость».</LI>
+<LI>Домен — тип значения атрибута. Например, в столбце «Цена» стоимость должна быть указана числом с десятичной частью.</LI>
+<LI>Кортеж — пронумерованная строка в таблице.</LI>
+<LI>Значение — содержимое одной ячейки.</LI>
+<LI>Индекс — объект базы данных, который упрощает поиск по ней. В таблице содержится множество строк в произвольном порядке, поиск нужной информации может 
+занимать много времени. Индекс ускоряет процесс.</LI>
+</UL>
+<P style="font-size:18px"> СУБД, система управления базами данных, — программа, с помощью которой можно работать с базой: создавать таблицы, изменять их, получать из них 
+информацию.</p>
+<p style="font-size:18px">Это отдельная программа, которая где-то запущена, обычно на сервере. Однако вы можете запустить её и на своём компьютере, чтобы попрактиковаться с ней. То есть СУБД — фактически
+ как оператор кол-центра, который работает 24/7. Ему можно позвонить и сказать: «Назови мне все адреса филиалов компании в Санкт-Петербурге». Только вы обращаетесь к СУБД с помощью SQL-запросов.</p>
+<BR>
+<p><a name="three"></a></P>
+<P ALIGN="CENTER" style="font-size:24px"><FONT COLOR="pink" FACE="Comic Sans MS">Команды и пример кода</FONT></P>
+<p><a name="three1"></a></p>
+<div class="rightimg">
+<IMG SRC='haha.jpg' ALIGN="right" WIDHT='190' HEIGHT='230'>
+<p><FONT COLOR="pink">пример команд</font></p>
+</div>
+<P ALIGN="LEFT" style="font-size:20px"><FONT COLOR="pink" FACE="Comic Sans MS">Основные команды</FONT></P>
+<P style="font-size:18px">SQL — декларативный язык. Это значит, что при написании кода мы говорим, что хотим получить от программы. Логика того, как именно СУБД будет выполнять поставленную задачу,
+ скрыта от нас.</p>
+<p style="font-size:18px">Все SQL-команды делятся на четыре вида:</p>
+<p style="font-size:18px">DDL (Data Definition Language, или язык описания данных). Их используют, чтобы создавать, изменять и удалять целые таблицы.</p>
+<p style="font-size:18px">DML (Data Manipulation Language, или язык управления данными). Их применяют к содержимому таблиц, чтобы создавать, изменять, удалять атрибуты и записи. Если нужно получить какую-то информацию из базы данных, 
+то пользуются именно DML-операторами.</p>
+<p style="font-size:18px">DCL (Data Control Language, или язык контроля данных). Они нужны, чтобы выдавать конкретным пользователям доступ к базам данных и отзывать его.</p>
+<p style="font-size:18px">TCL (Transaction Control Language, или язык контроля транзакций). Позволяет управлять транзакциями. Транзакция — это набор из нескольких команд, которые выполняются поочерёдно. Если одна из команд внутри транзакции 
+не срабатывает, то все уже совершённые действия отменяются. То есть транзакция может быть совершена либо полностью, либо никак.</p>
+<BR>
+<IMG SRC='yy.jpg' class="center" align="CENTER" WIDHT='190' HEIGHT='230'>
+<p style="font-size:18px">Примеры DDL-запросов: CREATE, DROP, RENAME, ALTER.</p>
+<p style="font-size:18px">Примеры DML-запросов: SELECT, UPDATE, DELETE, INSERT.</p>
+<p style="font-size:18px">Примеры DCL-запросов: GRANT, REVOKE, DENY.</p>
+<p style="font-size:18px">Примеры TCL-запросов: COMMIT, ROLLBACK, BEGIN.</p>
+<p style="font-size:18px">SQL-инструкции общаются не напрямую с базой данных, а с СУБД. Многие производители СУБД хотели расширить функциональность запросов, поэтому добавляли к языку собственные 
+расширения.Так у SQL появились несовместимые между собой диалекты. Например, PL/SQL, PL/pgSQL, T-SQL. Но структура запросов и основные «встроенные» команды от диалекта к 
+диалекту неизменны.</p>
+<p><a name="three2"></a></p>
+<P ALIGN="LEFT" style="font-size:20px"><FONT COLOR="pink" FACE="Comic Sans MS">Пример кода</FONT></P>
+<p style="font-size:18px"><U>Создание таблицы</u></p>
+<p style="font-size:18px">Пример первый:</p>
+<p><FONT COLOR="blue">CREATE TABLE</FONT> CatsAndOwners</FONT> (</p>
+<p>CatID int(<FONT COLOR="magenta">6</FONT>) <FONT COLOR="blue">NOT NULL</FONT></p>
+<p>CatName varchar(<FONT COLOR="magenta">255</FONT>)<FONT COLOR="blue">NOT NULL</FONT></p>
+<p>CatAge int(<FONT COLOR="magenta">6</FONT>) <FONT COLOR="blue">NOT NULL</FONT></p>
+<p>CatColor varchar(<FONT COLOR="magenta">255</FONT>)<FONT COLOR="blue">NOT NULL</FONT></p>
+<p>CatOwnerName varchar(<FONT COLOR="magenta">255</FONT>)<FONT COLOR="blue">NOT NULL</FONT></p>
+<p>) ;</p>
+<IMG SRC="p1.jpg" WIDHT='50' HEIGHT='110' class="P1">
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<p style="font-size:18px">Пример второй:</p>
+<p><FONT COLOR="blue">INSERT INTO</FONT> CatsAndOwners(CatID,CatName, CatAge, CatColor, CatOwnerName, City)</p>
+<p><FONT COLOR="blue">VALUES</FONT></p>
+<p>(<FONT COLOR="magenta">1</FONT>, <FONT COLOR="limegreen">'Мурка'</FONT>, <FONT COLOR="magenta">3</FONT>, <FONT COLOR="limegreen">'Черная'</FONT>, <FONT COLOR="limegreen">'Дмитрий'</FONT>, <FONT COLOR="limegreen">'Москва'</FONT> );</p>
+<p><FONT COLOR="blue">INSERT INTO</FONT> CatsAndOwners(CatID,CatName, CatAge, CatColor, CatOwnerName, City)</p>
+<p><FONT COLOR="blue">VALUES</FONT></p>
+<p>(<FONT COLOR="magenta">2</FONT>, <FONT COLOR="limegreen">'Белла'</FONT>, <FONT COLOR="magenta">7</FONT>, <FONT COLOR="limegreen">'Белая'</FONT>, <FONT COLOR="limegreen">'Максим'</FONT>, <FONT COLOR="limegreen">'Саратов'</FONT> );</p>
+<p><FONT COLOR="blue">INSERT INTO</FONT> CatsAndOwners(CatID,CatName, CatAge, CatColor, CatOwnerName, City)</p>
+<p><FONT COLOR="blue">VALUES</FONT></p>
+<p>(<FONT COLOR="magenta">3</FONT>, <FONT COLOR="limegreen">'Симба'</FONT>, <FONT COLOR="magenta">5</FONT>, <FONT COLOR="limegreen">'Рыжий'</FONT>, <FONT COLOR="limegreen">'Екатерина'</FONT>, <FONT COLOR="limegreen">'Санкт-Петербург'</FONT> );</p>
+<p><FONT COLOR="blue">INSERT INTO</FONT> CatsAndOwners(CatID,CatName, CatAge, CatColor, CatOwnerName, City)</p>
+<p><FONT COLOR="blue">VALUES</FONT></p>
+<p>(<FONT COLOR="magenta">4</FONT>, <FONT COLOR="limegreen">'Лео'</FONT>, <FONT COLOR="magenta">2</FONT>, <FONT COLOR="limegreen">'Полосатый'</FONT>, <FONT COLOR="limegreen">'Александр'</FONT>, <FONT COLOR="limegreen">'Екатеринбург'</FONT> );</p>
+<p><FONT COLOR="blue">INSERT INTO</FONT> CatsAndOwners(CatID,CatName, CatAge, CatColor, CatOwnerName, City)</p>
+<p><FONT COLOR="blue">VALUES</FONT></p>
+<p>(<FONT COLOR="magenta">5</FONT>, <FONT COLOR="limegreen">'Мася'</FONT>, <FONT COLOR="magenta">1</FONT>, <FONT COLOR="limegreen">'Серый'</FONT>, <FONT COLOR="limegreen">'Анна'</FONT>, <FONT COLOR="limegreen">'Москва'</FONT> );</p>
+<IMG SRC="p2.jpg" WIDHT='200' HEIGHT='260' class="P2">
+</BODY>
+</HTML>
